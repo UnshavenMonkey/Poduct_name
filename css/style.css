@@ -18,13 +18,88 @@
     color: #ffffff;
 }
 
+/* блок шапки слева */
+.header_block_left {
+
+}
+
+/* заголовок слева */
 .header_title {
     font-family: Arial;
     font-size: 60px;
     line-height: 1.2;
     font-weight: 400;
+    margin: 0 0 30px 0;
 }
 
+/* список под заголовком */
 .header_order {
     list-style-type: none;
+    margin: 0;
+}
+
+/* элементы списка */
+.header_order_list {
+    position: relative;
+    font-family: Arial;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+/* галочки у элементов списка через псевдоэлемент */
+.header_order_list:before {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 19px;
+    position: absolute;
+    top: 4px;
+    left: -40px;
+    background-image: url(../images/header_order_list_icon.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+/* фото товара в шапке сайта */
+.header_image {
+}
+
+/* блок "about your product" */
+.section_about{
+    width: 100%;
+    padding: 50px;
+    background-image: url(../images/about_bg.png);
+    display: flex;
+    justify-content: space-between;
+}
+
+.section_about_left {
+    width: 653px;
+
+}
+
+.section_about_title {
+    color:#445161;
+    font-family: Arial;
+    font-size: 30px;
+    align: left;
+}
+
+.section_about_paragraph {
+    color:#333333;
+    font-family: Arial;
+    font-size: 16px;
+    align: left;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+.video_about {
+    display: block;
+    width: 431px;
+    height: 246px;
+    background-image: url(../images/about_video.png);
 }
