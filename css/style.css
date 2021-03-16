@@ -5,6 +5,7 @@
 .container {
     max-width: 1280px;
     margin: 0 auto;
+    background-image: url(../images/background.png);
 }
 
 /* контейнер шапки сайта */
@@ -74,18 +75,23 @@
     justify-content: space-between;
 }
 
+/* обертка слева в разделе about */
 .section_about_left {
     width: 653px;
-
 }
 
+/* заголовок в разделе about */
 .section_about_title {
     color:#445161;
     font-family: Arial;
     font-size: 30px;
     align: left;
+    line-height: 36px;
+    font-weight: 400;
+    margin: 0;
 }
 
+/* параграфы в разделе about */
 .section_about_paragraph {
     color:#333333;
     font-family: Arial;
@@ -95,11 +101,99 @@
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
     hyphens: auto;
+    line-height: 24px;
+    font-weight: 400;
 }
 
+/* видео в разделе about */
 .video_about {
     display: block;
     width: 431px;
     height: 246px;
     background-image: url(../images/about_video.png);
+}
+
+/* обертка блока pluses */
+.pluses {
+    width: 100%;
+    padding: 50px;
+}
+
+/* заголовок блока pluses */
+.pluses_title {
+    font-family: Arial;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #445161;
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+
+/* обертка параграфов pluses */
+.pluses_paragraph_block {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* параграфы pluses */
+.pluses_paragraph {
+    width: 570px;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #333333;
+    margin: 0 0 30px 0;
+}
+
+.screenshots {
+    background-image: url(../images/screenshots_bg.png);
+    width: 100%;
+    padding: 50px;
+}
+
+.screenshots_title {
+    font-family: Arial;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #445161;
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+
+.screenshots_block {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.screenshot_block {
+    width: 565px;
+    display: flex;
+    margin: 0 15px 30px 0;
+}
+
+.screenshots_text {
+    margin: 0 0 0 15px;
+}
+
+.screenshot_image_title {
+    font-family: Arial;
+    font-size: 24px;
+    line-height: 17px;
+    font-weight: 400;
+    color: #445161;
+    display: block;
+    margin: 0 0 15px 0;
+}
+
+.screenshot_image_paragraph {
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #333333;
+    display: block;
+    margin: 0;
 }
