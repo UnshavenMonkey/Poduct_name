@@ -171,7 +171,7 @@
 
 /* блок со скриншотом и текстом */
 .screenshot_block {
-    width: 565px;
+    width: 575px;
     display: flex;
     margin: 0 15px 30px 0;
 }
@@ -316,13 +316,26 @@
 }
 
 .buy_button {
+    display: block;
+    text-decoration: none;
     font-family: Arial;
     font-size: 18px;
-    line-height: 18px;
+    line-height: 40px;
     font-weight: 700;
     color: #445161;
     text-align: center;
     width: 260px;
     height: 40px;
     background-color: #ffffff;
+    margin: 0 auto;
+}
+
+.contacts {
+    background-image: url(../images/footer_bg.png);
+}
+
+.footer_form {
+    display: flex;
+    flex-direction: column;
+    width: 501px;
 }
