@@ -332,10 +332,123 @@
 
 .contacts {
     background-image: url(../images/footer_bg.png);
+    padding: 50px 235px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer_title {
+    font-family: Arial;
+    width: 100%;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0 0 30px 0;
+    text-align: center;
 }
 
 .footer_form {
     display: flex;
     flex-direction: column;
     width: 501px;
+}
+
+.input_name, .input_email, .footer_textarea {
+    padding: 10px;
+    margin: 0 0 20px 0;
+    border-radius: 5px;
+    border: 1px solid #445162;
+    outline: none;
+}
+
+.footer_textarea {
+    resize: none;
+}
+
+.footer_submit {
+    width: 141px;
+    align-self: center;
+    background-color: white;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #445162;
+    padding: 15px 0;
+    border-radius: 5px;
+    border: 1px solid #445162;
+    outline: none;
+}
+
+.social_link {
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.skype_link, .icq_link, .email_link, .phone_link {
+    display: block;
+    position: relative;
+    margin: 0 0 30px 30px;
+}
+
+.skype_link:before {
+    content: "";
+    background-image: url(../images/skype_icon.png);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 26px;
+    position: absolute;
+    left: -30px;
+}
+
+.icq_link:before {
+    content: "";
+    background-image: url(../images/icq_icon.png);
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    left: -30px;
+}
+
+.email_link:before {
+    content: "";
+    background-image: url(../images/email_icon.png);
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: -30px;
+}
+
+.phone_link:before {
+    content: "";
+    background-image: url(../images/phone_icon.png);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 23px;
+    position: absolute;
+    left: -30px;
+}
+
+.social_link_buttons {
+    display: block;
+}
+
+.font_icon_button {
+    font-size: 24px;
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    color: #445162;
+    border-radius: 50%;
+    border: 1px solid #445162;
+    text-align: center;
+    padding: 4%;
 }
